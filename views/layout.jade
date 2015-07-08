@@ -1,0 +1,10 @@
+h1 aaa
+table
+	- var i = 0
+	- data.forEach(function(row){
+		tr(class="fragment" data-fragment-index=i)
+			- row.forEach(function(value){
+				td #{value}
+			- })
+		- i++
+	- })
